@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Company\" />
+    <Folder Include="Controllers\User\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SilverFox.BLL\SilverFox.BLL.csproj" />
+    <ProjectReference Include="..\..\SilverFox.DAL\SilverFox.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
